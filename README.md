@@ -2,6 +2,10 @@
 This repository records both the weights and exponents of the SOE produced by the [VPMR](https://link.springer.com/article/10.1007/s10915-022-01999-1), a recently developed sum-of-exponentials method.
 
 ##  Gaussian kernel  ##
+Exponents and weights of the SOE for the Gaussian kernel  $f(x)=e^{-\frac{x^2}{4}}$  with the number of terms $P=9$ and absolute error $10^{-8}$.
+
+[Image text]!
+(Screenshots/Gaussian_1e8_9term.png) 
 
 
 ##  Remark  ##
