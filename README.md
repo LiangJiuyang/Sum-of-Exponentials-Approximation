@@ -4,9 +4,11 @@ This repository records both the weights and exponents of the SOE produced by th
 ##  Gaussian kernel  ##
 Exponents and weights of the SOE for the Gaussian kernel  $f(x)=e^{-\frac{x^2}{4}}$  with the number of terms $P=9$ and absolute error $10^{-8}$.
 
-[Image text]!
-(Screenshots/Gaussian_1e8_9term.png) 
+![Gaussian_9_terms_1e-8_error](https://github.com/LiangJiuyang/Sum-of-Exponentials-Approximation/tree/main/Screenshots/Gaussian_1e8_9term.png) 
 
+Exponents and weights of the SOE for the Gaussian kernel  $f(x)=e^{-\frac{x^2}{4}}$  with the number of terms $P=16$ and absolute error $6\times 10^{-14}$.
+
+![Gaussian_15_terms_6e-14_error](https://github.com/LiangJiuyang/Sum-of-Exponentials-Approximation/tree/main/Screenshots/Gaussian_6e14_15term.png) 
 
 ##  Remark  ##
 If you use these SOE in your work and feel that these approximations are helpful to you, please cite the following paper：
