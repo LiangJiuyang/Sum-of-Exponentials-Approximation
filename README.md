@@ -2,24 +2,28 @@
 This repository records both the weights and exponents of the SOE produced by the [VPMR](https://link.springer.com/article/10.1007/s10915-022-01999-1), a recently developed sum-of-exponentials method.
 
 ##  Gaussian kernel  ##
-Exponents and weights of the SOE for the Gaussian kernel  $f(x)=e^{-\frac{x^2}{4}}$  with the number of terms $P=9$ and absolute error $10^{-8}$.
+### Exponents and weights of the SOE for the Gaussian kernel  $f(x)=e^{-\frac{x^2}{4}}$ on $[0,\infty]$, with the number of terms $P=9$ and absolute error $10^{-8}$. ###
 
 ![Gaussian_9_terms_1e-8_error](https://github.com/LiangJiuyang/Sum-of-Exponentials-Approximation/tree/main/Screenshots/Gaussian_1e8_9term.png) 
 
-Exponents and weights of the SOE for the Gaussian kernel  $f(x)=e^{-\frac{x^2}{4}}$  with the number of terms $P=16$ and absolute error $6\times 10^{-14}$.
+### Exponents and weights of the SOE for the Gaussian kernel  $f(x)=e^{-\frac{x^2}{4}}$ on $[0,\infty]$, with the number of terms $P=16$ and absolute error $6\times 10^{-14}$. ###
 
 ![Gaussian_15_terms_6e-14_error](https://github.com/LiangJiuyang/Sum-of-Exponentials-Approximation/tree/main/Screenshots/Gaussian_6e14_15term.png) 
 
-Exponents and weights of the SOE for the Gaussian kernel $f(x)=e^{-x^2}$ with the number of terms $P=18$ and absolute error $1\times 10^{-15}$.
+### Exponents and weights of the SOE for the Gaussian kernel $f(x)=e^{-x^2}$ on $[0,\infty]$, with the number of terms $P=18$ and absolute error $1\times 10^{-15}$. ###
 
-Weights:
+**Weights**:
 ```
 5.99673832958228e-06 + 1.68666706190233e-06i	5.99673832964075e-06 - 1.68666706179742e-06i	-0.00128256763349392 - 5.69515998682304e-05i	-0.00128256763349477 + 5.69515998663800e-05i	0.0467989716657016 - 0.0248428082769860i	0.0467989716657026 + 0.0248428082770166i	-0.335267028777594 + 0.757075111679156i	-0.335267028777571 - 0.757075111679353i	-1.99598682670183 - 5.99221164256010i	-1.99598682670221 + 5.99221164256101i	23.9009795446709 + 12.0862363354612i	23.9009795446732 - 12.0862363354632i	-64.0632116678656 + 22.5380203666186i	-64.0632116678705 - 22.5380203666172i	42.9479635779022 - 98.1965284307393i	42.9479635779079 + 98.1965284307392i	2.77886417555933e-16 + 1.05052462423441e-16i	2.77886412307273e-16 - 1.05052680588430e-16i
 ```
-Exponents:
+**Exponents**:
 ```
 4.56160429581067 + 8.10664614462486i	4.56160429581067 - 8.10664614462486i	4.67614751620509 + 6.66817205403247i	4.67614751620509 - 6.66817205403247i	4.75706771210077 + 5.46277771275372i	4.75706771210077 - 5.46277771275372i	4.81739468471801 + 4.37139574323745i	4.81739468471801 - 4.37139574323745i	4.86201933938979 + 3.34750236244862i	4.86201933938979 - 3.34750236244862i	4.89345823682377 + 2.36588612738340i	4.89345823682377 - 2.36588612738340i	4.91338156910332 + 1.41021110952036i	4.91338156910332 - 1.41021110952036i	4.92300187934591 + 0.468589313154398i	4.92300187934591 - 0.468589313154398i	0.0334524767879181 + 0.0245907245253121i	0.0334524767879181 - 0.0245907245253121i
 ```
+
+### Exponents and weights of the SOE for the Ewald splitting kernel $f(x)=\frac{\text{erf}(0.07*x)}{x}$ on $[10,\infty]$, with the number of terms $P=18$ and absolute error $1\times 10^{-11}$. ###
+
+This configuration is commonly employed in molecular simulations to calculate long-range Coulombic interactions. It involves a cutoff radius $r_c=1$ $nm$, which limits the interactions to atoms within this distance. To handle the long-range interactions, the Ewald splitting method is used with an $\alpha$ value of $\sqrt{\alpha}=0.07$. The error level is about $10^{-4}$ for the simulation.
 
 ##  Remark  ##
 If you use these SOE in your work and feel that these approximations are helpful to you, please cite the following paper：
